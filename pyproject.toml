@@ -16,7 +16,6 @@ classifiers = [
     'Topic :: Scientific/Engineering :: Artificial Intelligence'
 ]
 dependencies = [
-    'habitat_sim', # imported via conda (aihabitat::habitat-sim)
     'importlib_resources', # imported via conda (conda-forge::importlib_resources)
     'matplotlib', # imported via conda (conda-forge::matplotlib)
     'numpy', # imported via conda (conda-forge::numpy)
@@ -40,6 +39,9 @@ readme = 'README.md'
 requires-python = '>=3.8'
 
 [project.optional-dependencies]
+habitat = [
+    'habitat_sim', # imported via conda (aihabitat::habitat-sim)
+]
 analysis = [
     'ipython',
     'seaborn',
